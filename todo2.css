@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #144d54;
+}
+#main{
+    background-color: white;
+    width: fit-content;
+    margin: 100px;
+    padding: 10px;
+    padding-left:25px ;
+    padding-right: 25px;
+    border-radius:5px ;
+    overflow: auto;
+}
+#text{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.secondSpan{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+input[type=text]{
+    width:300px;
+    height: 40px;
+    float: left;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 3px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+#add{
+    margin-left: 8px;
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(77, 160, 77);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#add:hover{
+    scale: 1.05;
+}
+#add:active{
+    scale: 0.95;
+}
+
+.thirdSpan{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.listItems{
+    width:300px;
+    height: auto;
+    text-align: justify;
+    outline: none;
+    border: none;
+    background-color: rgba(175, 171, 171, 0.422);
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: cursive;
+    text-transform: uppercase;
+    /* overflow-y: auto; */
+    
+}
+
+
+.deleteButton{
+    margin-left: 8px;
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(170, 2, 2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.deleteButton:hover{
+    scale: 1.05;
+    animation: deleteAnimation 0.2s;
+}
+@keyframes deleteAnimation {
+    from{transform: rotateZ(10deg);}
+    50%{transform: rotateZ(-10deg);}
+    to{transform: rotateZ(10deg);}
+}
+.deleteButton:active{
+    scale: 0.95;
+}
+#infoIcon{
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 2px 5px;
+    cursor: pointer;
+}
